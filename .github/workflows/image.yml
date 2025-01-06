@@ -5,8 +5,8 @@ on:
     branches:
       - main
   workflow_dispatch: {}
-  schedule:
-    - cron: '00 03 * * 0'
+  # schedule:
+  #   - cron: '00 03 * * 0'
 
 jobs:
   image:
@@ -16,9 +16,9 @@ jobs:
       matrix:
         os:
           - latest
-          - ubuntu
-          - centos
-          - fedora
+          # - ubuntu
+          # - centos
+          # - fedora
           - debian
     steps:
       - name: Checkout Repository
